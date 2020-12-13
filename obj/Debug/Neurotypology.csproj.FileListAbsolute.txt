@@ -1,0 +1,10 @@
+E:\MS Visual Studio\Projects\Neurotypology\bin\Debug\Neurotypology.exe.config
+E:\MS Visual Studio\Projects\Neurotypology\bin\Debug\Neurotypology.exe
+E:\MS Visual Studio\Projects\Neurotypology\bin\Debug\Neurotypology.pdb
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.csprojAssemblyReference.cache
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.Form1.resources
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.Properties.Resources.resources
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.csproj.GenerateResource.cache
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.csproj.CoreCompileInputs.cache
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.exe
+E:\MS Visual Studio\Projects\Neurotypology\obj\Debug\Neurotypology.pdb
