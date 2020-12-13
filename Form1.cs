@@ -14,6 +14,7 @@ namespace Neurotypology
     {
         String[] firstColumnArray = new string[60];
         String[] secondColumnArray = new string[60];
+        String[] resultArray = new string[6];
 
         public void reset()
         {
@@ -391,17 +392,130 @@ namespace Neurotypology
 
             //labelResultValue.Text = sumFirstColumnVector.ToString();
 
-            int markFirstColumnVector = sumFirstColumnVector / (sumFirstColumnVector + sumSecondColumnVector) * 100;
-            int markSecondColumnVector = sumSecondColumnVector / (sumFirstColumnVector + sumSecondColumnVector) * 100;
 
-            int markFirstColumnVolume = sumFirstColumnVolume / (sumFirstColumnVolume + sumSecondColumnVolume) * 100;
-            int markSecondColumnVolume = sumSecondColumnVolume / (sumFirstColumnVolume + sumSecondColumnVolume) * 100;
+            int extroverted = sumFirstColumnVector / (sumFirstColumnVector + sumSecondColumnVector) * 100;
+            int introverted = sumSecondColumnVector / (sumFirstColumnVector + sumSecondColumnVector) * 100;
 
-            int markFirstColumnDegree = sumFirstColumnDegree / (sumFirstColumnDegree + sumSecondColumnDegree) * 100;
-            int markSecondColumnDegree = sumSecondColumnDegree / (sumFirstColumnDegree + sumSecondColumnDegree) * 100;
+            int sensory = sumFirstColumnVolume / (sumFirstColumnVolume + sumSecondColumnVolume) * 100;
+            int intuitive = sumSecondColumnVolume / (sumFirstColumnVolume + sumSecondColumnVolume) * 100;
 
-            int markFirstColumnQuality = sumFirstColumnQuality / (sumFirstColumnQuality + sumSecondColumnQuality) * 100;
-            int markSecondColumnQuality = sumSecondColumnQuality / (sumFirstColumnQuality + sumSecondColumnQuality) * 100;
+            int ethical = sumFirstColumnDegree / (sumFirstColumnDegree + sumSecondColumnDegree) * 100;
+            int logical = sumSecondColumnDegree / (sumFirstColumnDegree + sumSecondColumnDegree) * 100;
+
+            int irrational = sumFirstColumnQuality / (sumFirstColumnQuality + sumSecondColumnQuality) * 100;
+            int rational = sumSecondColumnQuality / (sumFirstColumnQuality + sumSecondColumnQuality) * 100;
+
+
+            if (rational >= irrational)
+            {
+                if (logical >= ethical)
+                {
+                    if (intuitive >= sensory)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Джек Лондон (Предприниматель)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Робеспьер (Аналитик)";
+                        }
+                    }
+                    if (sensory >= intuitive)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Штирлиц (Администратор)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Максим Горький (Инспектор)";
+                        }
+                    }
+                }
+                if (ethical >= logical)
+                {
+                    if (intuitive >= sensory)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Гамлет (Наставник)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Достоевский (Гуманист)";
+                        }
+                    }
+                    if (sensory >= intuitive)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Гюго (Энтузиаст)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Драйзер (Хранитель)";
+                        }
+                    }
+                }
+            }
+            if (irrational >= rational)
+            {
+                if (intuitive >= sensory)
+                {
+                    if (logical >= ethical) 
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Дон Кихот (Искатель)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Бальзак (Критик)";
+                        }
+                    }
+                    if (ethical >= logical)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Гексли (Советчик)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Есенин (Лирик)";
+                        }
+                    }
+                }
+                if (sensory >= intuitive)
+                {
+                    if (logical >= ethical)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Жуков (Маршал)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Габен (Мастер)";
+                        }
+                    }
+                    if (ethical >= logical)
+                    {
+                        if (extroverted >= introverted)
+                        {
+                            labelResultValue.Text = "Наполеон (Политик)";
+                        }
+                        if (introverted >= extroverted)
+                        {
+                            labelResultValue.Text = "Дюма (Посредник)";
+                        }
+                    }
+                }
+            }
+            
+
+            
+
         }
     }
 }

@@ -4628,7 +4628,7 @@ namespace Neurotypology
             // 
             this.labelResult.AutoSize = true;
             this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelResult.Location = new System.Drawing.Point(493, 925);
+            this.labelResult.Location = new System.Drawing.Point(493, 901);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(148, 24);
             this.labelResult.TabIndex = 70;
@@ -4638,7 +4638,7 @@ namespace Neurotypology
             // 
             this.labelResultValue.AutoSize = true;
             this.labelResultValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelResultValue.Location = new System.Drawing.Point(641, 925);
+            this.labelResultValue.Location = new System.Drawing.Point(494, 926);
             this.labelResultValue.Name = "labelResultValue";
             this.labelResultValue.Size = new System.Drawing.Size(0, 24);
             this.labelResultValue.TabIndex = 71;
